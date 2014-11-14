@@ -1,0 +1,36 @@
+{
+  "name": "dummy-6to5-karma-coverage",
+  "version": "0.0.0",
+  "description": "Dummy 6to5 project to test karma coverage on it with isparta",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/douglasduteil/dummy-6to5-karma-coverage.git"
+  },
+  "author": "Douglas Duteil",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/douglasduteil/dummy-6to5-karma-coverage/issues"
+  },
+  "homepage": "https://github.com/douglasduteil/dummy-6to5-karma-coverage",
+  "devDependencies": {
+    "isparta": "douglasduteil/isparta",
+    "karma": "^0.12.24",
+    "karma-6to5-preprocessor": "^0.1.2",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-coverage": "douglasduteil/karma-coverage#next",
+    "karma-jasmine": "^0.1.5",
+    "karma-jspm": "douglasduteil/karma-jspm#next"
+  },
+  "jspm": {
+    "name": "dummy-6to5-karma-coverage",
+    "main": "index.js",
+    "directories": {
+      "lib": "src"
+    },
+    "configFile": "jspm.packages.js"
+  }
+}
