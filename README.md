@@ -1,6 +1,6 @@
 # Dummy-6to5-karma-coverage
 
-> Dummy 6to5 project to test karma coverage on it with isparta
+> Dummy 6to5 project to test karma coverage on it with isparta oleg
 
 ### Dev Dependencies
 
