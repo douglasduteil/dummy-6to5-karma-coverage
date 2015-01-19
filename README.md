@@ -6,9 +6,10 @@
 
 ```js
 {
-  "isparta": "douglasduteil/isparta",
+  "isparta": "^0",
   "karma": "^0.12.24",
   "karma-chrome-launcher": "^0.1.5",
+  // MANDATORY TO PLUG ISPARTA
   "karma-coverage": "douglasduteil/karma-coverage#next",
   "karma-jasmine": "^0.1.5",
   "karma-jspm": "^1.0.1"
@@ -24,6 +25,10 @@ jspm install
 ```
 
 ### Running the tests
-```bash
-karma start
+
+```sh
+# Normal testing
+npm test
+# Testing with coverage :)
+npm run coverage
 ```

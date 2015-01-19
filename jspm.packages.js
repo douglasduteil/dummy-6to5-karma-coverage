@@ -1,6 +1,7 @@
 System.config({
   "paths": {
-    "*": "*.js"
+    "*": "*.js",
+    "dummy-6to5-karma-coverage/*": "src/*.js"
   }
 });
 
