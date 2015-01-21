@@ -6,6 +6,7 @@
 
 ```js
 {
+  "6to5": "^2",
   "isparta": "^0",
   "karma": "^0.12.24",
   "karma-chrome-launcher": "^0.1.5",
