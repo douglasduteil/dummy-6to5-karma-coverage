@@ -1,4 +1,4 @@
-# Dummy-6to5-karma-coverage
+# Dummy-6to5-karma-coverage [![Build Status][travis-image]][travis-url]
 
 > Dummy 6to5 project to test karma coverage on it with isparta oleg
 
@@ -33,3 +33,6 @@ npm test
 # Testing with coverage :)
 npm run coverage
 ```
+
+[travis-url]: http://travis-ci.org/douglasduteil/dummy-6to5-karma-coverage
+[travis-image]: http://travis-ci.org/douglasduteil/dummy-6to5-karma-coverage.svg?branch=master
