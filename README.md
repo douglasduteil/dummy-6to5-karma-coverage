@@ -1,6 +1,6 @@
 # Dummy-6to5-karma-coverage [![Build Status][travis-image]][travis-url]
 
-> Dummy 6to5 project to test karma coverage on it with isparta oleg
+> Dummy 6to5 project to test karma coverage on it with [isparta](https://github.com/douglasduteil/isparta)
 
 ### Dev Dependencies
 
