@@ -1,14 +1,17 @@
+
+var to5Options = require('./.6to5rc');
+
 module.exports = function(config) {
 
-  var to5Options = require('./.6to5rc');
-
   config.set({
-    frameworks: ['jasmine', 'jspm'],
+    frameworks: ['mocha', 'chai', 'jspm'],
+
+    files: ['node_modules/6to5/browser-polyfill.js'],
+
     preprocessors: {
       'src/**/*.js': ['6to5']
     },
-    reporters: ['progress'],
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     ////
 

@@ -1,0 +1,12 @@
+---
+git:
+  depth: 1
+language: node_js
+node_js:
+  - 0.1
+before_script:
+  - npm update -g
+  - npm install -g karma-cli jspm
+  - jspm install
+after_script:
+  - npm run coverage

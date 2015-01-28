@@ -1,33 +1,14 @@
 
 
 
-
-
-
-
-
-
-export class Something {
-  sum(a, b){
-    return a + b;
-  }
-
-  bar(a, b){
-    return a + b;
-  }
-}
-
-
-
 // Array comprehension
 // ============================================================================
-var customers = [ { city: 'Paris', name: 'foo', age: 42},  { city: 'Seattle', name: 'oof', age: 24}]
-var results = [for (c of customers) if (c.city == "Seattle") { name: c.name, age: c.age }]
-
+let customers = [ { city: 'Paris', name: 'foo', age: 42},  { city: 'Seattle', name: 'oof', age: 24}];
+let results = [for (c of customers) if (c.city == 'Seattle') { name: c.name, age: c.age }];
+export {results as arrayComprehensionResult};
 
 // Arrow functions
 // ============================================================================
-
 // Expression bodies
 var evens = [0,1,2,3,4,5,6,7,8,9];
 var odds = evens.map(v => v + 1);
@@ -59,7 +40,7 @@ var bob = {
 
 async function chainAnimationsAsync(elem, animations) {
   for (var anim of animations) {
-    await anim(elem);
+    await anim(elem)
   }
 }
 
@@ -83,9 +64,9 @@ var obj = {
 
 // Constants
 // ============================================================================
-const MULTIPLIER = 5;
-console.log(2 * MULTIPLIER);
+export const MULTIPLIER = 5;
 
+// Compilation error
 //MULTIPLIER = 6; // error
 //var MULTIPLIER; // error
 
@@ -129,10 +110,7 @@ var { op: a, lhs: { op: b }, rhs: c } = getASTNode();
 var { op, lhs, rhs } = getASTNode();
 
 // Can be used in parameter position
-function g({ name: x }) {
-  console.log(x);
-}
-g({ name: 5 });
+export function destructuringName({ name: x }) { return x; };
 
 // Fail-soft destructuring
 var [a] = [];
@@ -143,10 +121,14 @@ a === undefined;
 
 // For-of
 // ============================================================================
-
-for (var i of [1, 2, 3]) {
-  console.log(i * i);
+export function forOfPower(arr){
+  var res = [];
+  for (var i of arr) {
+    res.push( i * i );
+  }
+  return res;
 }
+
 
 
 
@@ -229,7 +211,9 @@ f(...[1,2,3]) == 6
 
 var x = 5;
 var y = 10;
-console.log(`${x} + ${y} = ${x + y}`); // "5 + 10 = 15"
+export function templateLiteralsXY(){
+  return `${x} + ${y} = ${x + y}`;
+}
 
 
 
@@ -241,7 +225,8 @@ console.log(`${x} + ${y} = ${x + y}`); // "5 + 10 = 15"
 // ============================================================================
 
 var string = 'foo💩bar';
-var match = string.match(/foo(.)bar/u);
-console.log(match[1]);
-
+export function unicodeMatch1(){
+  let match = string.match(/foo(.)bar/u);
+  return match[1];
+}
 
