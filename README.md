@@ -6,14 +6,19 @@
 
 ```js
 {
-  "6to5": "^2",
-  "isparta": "^0",
-  "karma": "^0.12.24",
-  "karma-chrome-launcher": "^0.1.5",
+  "6to5": "^3.0.9",
+  "chai": "^1.10.0",
+  "isparta": "^1.0.0",
+  "istanbul": "^0.3.5",
+  "karma": "^0.12.31",
+  "karma-6to5-preprocessor": "^3",
+  "karma-chai": "^0.1.0",
   // MANDATORY TO PLUG ISPARTA
   "karma-coverage": "douglasduteil/karma-coverage#next",
-  "karma-jasmine": "^0.1.5",
-  "karma-jspm": "^1.0.1"
+  "karma-jspm": "^1.1.3",
+  "karma-mocha": "^0.1.10",
+  "karma-phantomjs-launcher": "^0.1.4",
+  "mocha": "^2.1.0"
 }
 ```
 
