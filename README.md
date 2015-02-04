@@ -37,6 +37,8 @@ jspm install
 npm test
 # Testing with coverage :)
 npm run coverage
+# Consult the result on the coverage folder
+google-chrome coverage/phantomjs/index.html
 ```
 
 [travis-url]: http://travis-ci.org/douglasduteil/dummy-6to5-karma-coverage
