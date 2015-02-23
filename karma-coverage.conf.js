@@ -3,13 +3,13 @@ module.exports = function(config) {
       return browser.toLowerCase().split(/[ /-]/)[0];
   }
 
-  var to5Options = require('./.6to5rc');
+  var babelOptions = require('./.babelrc');
 
   config.set({
     frameworks: ['mocha', 'chai', 'jspm'],
-    files: ['node_modules/6to5/browser-polyfill.js'],
+    files: ['node_modules/babel/browser-polyfill.js'],
     preprocessors: {
-      'src/**/*.spec.js': ['6to5'],
+      'src/**/*.spec.js': ['babel'],
       'src/**/!(*.spec).js': ['coverage']
     },
     reporters: ['progress', 'coverage'],
@@ -17,8 +17,8 @@ module.exports = function(config) {
 
     ////
 
-    '6to5Preprocessor': {
-      options: to5Options
+    babelPreprocessor: {
+      options: babelOptions
     },
 
     jspm: {
@@ -37,7 +37,7 @@ module.exports = function(config) {
       },
 
       instrumenterOptions: {
-        isparta: { to5 : to5Options }
+        isparta: { babel : babelOptions }
       },
 
       reporters: [

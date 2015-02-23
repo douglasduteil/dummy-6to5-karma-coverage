@@ -1,19 +1,17 @@
 # Dummy-6to5-karma-coverage [![Build Status][travis-image]][travis-url]
 
-> Dummy 6to5 project to test karma coverage on it with [isparta](https://github.com/douglasduteil/isparta)
+> Dummy babel/6to5  project to test karma coverage on it with [isparta](https://github.com/douglasduteil/isparta)
 
 ### Dev Dependencies
 
 ```js
 {
-  "6to5": "^3.0.9",
+  "babel-core": "^4.0.0",
   "chai": "^1.10.0",
-  "isparta": "^1.0.0",
-  "istanbul": "^0.3.5",
+  "isparta": "^2.0.0",
   "karma": "^0.12.31",
-  "karma-6to5-preprocessor": "^3",
+  "karma-babel-preprocessor": "^4.0.0",
   "karma-chai": "^0.1.0",
-  // MANDATORY TO PLUG ISPARTA
   "karma-coverage": "douglasduteil/karma-coverage#next",
   "karma-jspm": "^1.1.3",
   "karma-mocha": "^0.1.10",

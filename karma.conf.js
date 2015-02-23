@@ -1,21 +1,21 @@
 
-var to5Options = require('./.6to5rc');
+var to5Options = require('./.babelrc');
 
 module.exports = function(config) {
 
   config.set({
     frameworks: ['mocha', 'chai', 'jspm'],
 
-    files: ['node_modules/6to5/browser-polyfill.js'],
+    files: ['node_modules/babel-core/browser-polyfill.js'],
 
     preprocessors: {
-      'src/**/*.js': ['6to5']
+      'src/**/*.js': ['babel']
     },
     browsers: ['PhantomJS'],
 
     ////
 
-    '6to5Preprocessor': {
+    babelPreprocessor: {
       options: to5Options
     },
 
