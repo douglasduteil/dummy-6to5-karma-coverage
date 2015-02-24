@@ -19,7 +19,7 @@
   "homepage": "https://github.com/douglasduteil/dummy-6to5-karma-coverage",
   "devDependencies": {
     "babel-core": "^4.0.0",
-    "chai": "^1.10.0",
+    "chai": "^2.0.0",
     "isparta": "^2.0.0",
     "karma": "^0.12.31",
     "karma-babel-preprocessor": "^4.0.0",

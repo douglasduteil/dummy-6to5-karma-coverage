@@ -7,7 +7,7 @@ module.exports = function(config) {
 
   config.set({
     frameworks: ['mocha', 'chai', 'jspm'],
-    files: ['node_modules/babel/browser-polyfill.js'],
+    files: ['node_modules/babel-core/browser-polyfill.js'],
     preprocessors: {
       'src/**/*.spec.js': ['babel'],
       'src/**/!(*.spec).js': ['coverage']
